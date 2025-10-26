@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java REST Client Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Java REST Client Integration</h1>
+    <p>Demonstration and API Documentation</p>
+  </header>
+
+  <section class="demo">
+    <h2>Try the API</h2>
+    <input type="number" id="postId" placeholder="Enter Post ID" />
+    <button onclick="fetchPost()">Fetch Post</button>
+    <pre id="responseBox">Response will appear here...</pre>
+  </section>
+
+  <section class="docs">
+    <h2>API Documentation</h2>
+    <p><strong>GET /posts/{id}</strong> – Fetch a post by ID</p>
+    <ul>
+      <li><strong>Method:</strong> GET</li>
+      <li><strong>URL:</strong> http://localhost:8080/posts/{id}</li>
+      <li><strong>Response:</strong> JSON object with id, userId, title, body</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Java REST Client Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
